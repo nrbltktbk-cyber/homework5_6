@@ -1,0 +1,4 @@
+echo "venv/" >> .gitignore
+echo "*.ini" >> .gitignore
+git add .
+git reset 'venv/'  # убираем venv из индекса
