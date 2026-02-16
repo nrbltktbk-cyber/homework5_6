@@ -1,17 +1,16 @@
- # Python
+# Python
 __pycache__/
-*.pyc
-
-# Virtual environment
-venv/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv
 .env/
+venv/
+*.sqlite3
 
-# Database
-*.db
-
-# VS Code
+# IDE / Editor
 .vscode/
-
-# Environment variables
-.env
-
+.idea/
+*.swp
+*.swo
