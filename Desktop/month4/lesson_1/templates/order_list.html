@@ -1,0 +1,18 @@
+<h1>Заказы</h1>
+<hr>
+<hr>
+<hr>
+{% for i in order %}
+
+<p>{{ i.name_order }}</p>
+<p>{{ i.choices_book }}</p>
+<p>{{ i.status_order }}</p>
+<p>{{ i.created_at }}</p>
+
+<a href="/order_list/{{ i.id }}/update/">Изменить данные</a>
+<a href="/order_list/{{ i.id }}/delete/">Удалить заказ</a>
+
+<hr>
+<hr>
+<hr>
+{% endfor %}

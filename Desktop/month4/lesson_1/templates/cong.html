@@ -1,0 +1,19 @@
+<h1>Список пользователей</h1>
+<h3>Поздравляем вы успешно авторизовались</h3>
+<hr>
+<hr>
+<hr>
+{% for i in user %}
+
+<p>{{ i.username }}</p>
+
+<hr>
+<hr>
+<hr>
+{% endfor %}
+
+<form action="/login/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <button type="submit">Выйти из аккаунта</button>
+</form>

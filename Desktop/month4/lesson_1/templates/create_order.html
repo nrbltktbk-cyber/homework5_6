@@ -1,0 +1,11 @@
+<h1>Добавить заказ</h1>
+<form action="/create_order/" method="POST" enctype="multipart/form-data">
+
+    {% csrf_token %}
+    {{ form.as_p  }}
+
+    <button type="submit">Купить</button>
+    <button type="reset">Очистить</button>
+
+
+</form>
